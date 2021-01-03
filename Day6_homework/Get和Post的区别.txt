@@ -1,0 +1,10 @@
+
+        GET和POST的区别：
+            1）、GET在浏览器回退时是无害的，而POST会再次提交请求
+            2）、GET请求在URL中传送的参数是有长度限制的，而POST没有
+            3）、对参数的数据类型，GET只接受ASCII字符，而POST则没有限制
+            4）、GET比POST更不安全，因为参数直接暴露在URL中，所以不能用来传递敏感信息
+            5）、GET参数通过URL进行传递，POST则放在Request body中，常用来提交表单
+            6）、GET请求产生一个TCP数据包，浏览器会把http header和data一并发送出去，服务器响应200
+                POST产生两个TCP数据包，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok
+                但并不是所有的浏览器都会在POST中发两次包，FireFox就只发送一次
