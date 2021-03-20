@@ -1,0 +1,175 @@
+2021-03-19 00:20:33,111 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 00:20:33,111 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': '', 'status': ''}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': '', 'status': ''}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': '', 'status': ''}]
+2021-03-19 00:20:33,116 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 00:20:33,120 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 00:20:34,177 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 00:20:34,183 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 00:20:34,183 - INFO - root - testA.py - test_run - [line: 34] - 用例1执行状态：Success
+2021-03-19 00:20:34,191 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 00:20:34,191 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 00:20:34,193 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 00:20:34,564 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 00:20:34,570 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 00:20:34,571 - INFO - root - testA.py - test_run - [line: 34] - 用例2执行状态：Fail
+2021-03-19 00:20:34,591 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 00:20:34,592 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 00:20:34,594 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 00:20:34,909 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 00:20:34,916 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 00:20:34,917 - INFO - root - testA.py - test_run - [line: 34] - 用例3执行状态：Success
+2021-03-19 00:20:34,934 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 21:16:09,937 - INFO - root - readConfig.py - get_value - [line: 30] - 获取mysql下ip的值为：127.0.0.1
+2021-03-19 22:56:57,673 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下from_addr的值为：zk1530@qq.com
+2021-03-19 22:56:57,673 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下send_to的值为：zk1530@163.com
+2021-03-19 22:56:57,673 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下passwd的值为：
+2021-03-19 22:56:58,966 - WARNING - root - sendEmail.py - send_email - [line: 53] - 邮件发送失败，失败原因：(502, b'Invalid input from 100.107.4.130 to newxmesmtplogicsvrszb7.qq.com')
+2021-03-19 22:57:50,771 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下from_addr的值为：zk1530@qq.com
+2021-03-19 22:57:50,771 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下send_to的值为：zk1530@163.com
+2021-03-19 22:57:50,771 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下passwd的值为：gdzwjzdycrfqhhed
+2021-03-19 22:57:52,666 - INFO - root - sendEmail.py - send_email - [line: 55] - 邮件发送成功
+2021-03-19 23:26:07,225 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 23:26:07,225 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': -1.0, 'status': 'Fail'}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}]
+2021-03-19 23:26:07,226 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 23:26:07,232 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:26:08,229 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 23:26:08,234 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:26:08,234 - INFO - root - testA.py - test_run - [line: 37] - 用例1执行状态：Success
+2021-03-19 23:26:08,269 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:26:08,270 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 23:26:08,275 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:26:08,653 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 23:26:08,659 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 23:26:08,660 - INFO - root - testA.py - test_run - [line: 37] - 用例2执行状态：Fail
+2021-03-19 23:26:08,677 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:26:08,688 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 23:26:08,690 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:26:09,020 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 23:26:09,027 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:26:09,028 - INFO - root - testA.py - test_run - [line: 37] - 用例3执行状态：Success
+2021-03-19 23:26:09,040 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:39:34,946 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 23:39:34,946 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': -1.0, 'status': 'Fail'}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}]
+2021-03-19 23:39:34,948 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 23:39:34,952 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:39:36,565 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 23:39:36,573 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:39:36,574 - INFO - root - testA.py - test_run - [line: 37] - 用例1执行状态：Success
+2021-03-19 23:39:36,585 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:39:36,586 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 23:39:36,591 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:39:37,115 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 23:39:37,121 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 23:39:37,122 - INFO - root - testA.py - test_run - [line: 37] - 用例2执行状态：Fail
+2021-03-19 23:39:37,136 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:39:37,138 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 23:39:37,143 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:39:37,528 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 23:39:37,537 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:39:37,537 - INFO - root - testA.py - test_run - [line: 37] - 用例3执行状态：Success
+2021-03-19 23:39:37,549 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:39:45,268 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 23:39:45,268 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': -1.0, 'status': 'Fail'}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}]
+2021-03-19 23:39:45,270 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 23:39:45,275 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:39:45,962 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 23:39:45,968 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:39:45,968 - INFO - root - testA.py - test_run - [line: 37] - 用例1执行状态：Success
+2021-03-19 23:39:45,973 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:39:45,974 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 23:39:45,975 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:39:46,368 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 23:39:46,374 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 23:39:46,375 - INFO - root - testA.py - test_run - [line: 37] - 用例2执行状态：Fail
+2021-03-19 23:39:46,389 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:39:46,391 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 23:39:46,396 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:39:46,692 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 23:39:46,700 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:39:46,701 - INFO - root - testA.py - test_run - [line: 37] - 用例3执行状态：Success
+2021-03-19 23:39:46,712 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:41:12,183 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 23:41:12,183 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': -1.0, 'status': 'Fail'}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}]
+2021-03-19 23:41:12,184 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 23:41:12,189 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:41:12,804 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 23:41:12,810 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:41:12,810 - INFO - root - testA.py - test_run - [line: 37] - 用例1执行状态：Success
+2021-03-19 23:41:12,816 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:41:12,816 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 23:41:12,818 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:41:13,210 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 23:41:13,216 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 23:41:13,216 - INFO - root - testA.py - test_run - [line: 37] - 用例2执行状态：Fail
+2021-03-19 23:41:13,229 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:41:13,232 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 23:41:13,236 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:41:13,540 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 23:41:13,543 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:41:13,544 - INFO - root - testA.py - test_run - [line: 37] - 用例3执行状态：Success
+2021-03-19 23:41:13,550 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:41:18,428 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 23:41:18,428 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': -1.0, 'status': 'Fail'}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}]
+2021-03-19 23:41:18,430 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 23:41:18,434 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:41:19,023 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 23:41:19,031 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:41:19,031 - INFO - root - testA.py - test_run - [line: 37] - 用例1执行状态：Success
+2021-03-19 23:41:19,044 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:41:19,045 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 23:41:19,047 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:41:19,426 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 23:41:19,432 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 23:41:19,433 - INFO - root - testA.py - test_run - [line: 37] - 用例2执行状态：Fail
+2021-03-19 23:41:19,448 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:41:19,450 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 23:41:19,455 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:41:19,762 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 23:41:19,769 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:41:19,770 - INFO - root - testA.py - test_run - [line: 37] - 用例3执行状态：Success
+2021-03-19 23:41:19,782 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:53:48,926 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 23:53:48,926 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': -1.0, 'status': 'Fail'}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}]
+2021-03-19 23:53:48,927 - INFO - root - main.py - case_suite - [line: 24] - 测试报告已生成，其中内容有<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<testA.TestA testMethod=test_run_1>, <testA.TestA testMethod=test_run_2>, <testA.TestA testMethod=test_run_3>]>]>]>
+2021-03-19 23:53:48,928 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 23:53:48,933 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:53:49,554 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 23:53:49,563 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:53:49,563 - INFO - root - testA.py - test_run - [line: 37] - 用例1执行状态：Success
+2021-03-19 23:53:49,575 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:53:49,576 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 23:53:49,581 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:53:49,975 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 23:53:49,987 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 23:53:49,987 - INFO - root - testA.py - test_run - [line: 37] - 用例2执行状态：Fail
+2021-03-19 23:53:49,993 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:53:49,994 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 23:53:49,997 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:53:50,310 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 23:53:50,317 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:53:50,318 - INFO - root - testA.py - test_run - [line: 37] - 用例3执行状态：Success
+2021-03-19 23:53:50,329 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:57:32,354 - INFO - root - readExcel.py - readexcel - [line: 36] - 获取字典key成功，为['id', 'interfaceUrl', 'name', 'Method', 'value', 'expect', 'real', 'status']
+2021-03-19 23:57:32,354 - INFO - root - readExcel.py - readexcel - [line: 45] - 获取处理后的测试数据列表成功，为[{'id': '1', 'interfaceUrl': 'https://www.wanandroid.com/user/login', 'name': 'login', 'Method': 'post', 'value': "{'username':'zhangkai','password':'123456'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}, {'id': '2', 'interfaceUrl': 'https://www.wanandroid.com/user/register', 'name': 'register', 'Method': 'post', 'value': "{'username':'zk03','password':'123456','repassword':'123456'}", 'expect': '0', 'real': -1.0, 'status': 'Fail'}, {'id': '3', 'interfaceUrl': 'https://www.wanandroid.com/user/logout/json', 'name': 'logout', 'Method': 'Get', 'value': "{'username':'liangchao'}", 'expect': '0', 'real': 0.0, 'status': 'Success'}]
+2021-03-19 23:57:32,355 - INFO - root - main.py - case_suite - [line: 25] - 测试套件已生成，其中内容有<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<testA.TestA testMethod=test_run_1>, <testA.TestA testMethod=test_run_2>, <testA.TestA testMethod=test_run_3>]>]>]>
+2021-03-19 23:57:32,356 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/login
+2021-03-19 23:57:32,361 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:57:32,985 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/login HTTP/1.1" 200 None
+2021-03-19 23:57:32,991 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': {'admin': False, 'chapterTops': [], 'coinCount': 0, 'collectIds': [17189, 17342], 'email': '', 'icon': '', 'id': 84078, 'nickname': 'zhangkai', 'password': '', 'publicName': 'zhangkai', 'token': '', 'type': 0, 'username': 'zhangkai'}, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:57:32,992 - INFO - root - testA.py - test_run - [line: 37] - 用例1执行状态：Success
+2021-03-19 23:57:32,997 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:57:32,997 - DEBUG - root - configHttp.py - config_http - [line: 29] - 测试链接为https://www.wanandroid.com/user/register
+2021-03-19 23:57:32,999 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:57:33,368 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "POST /user/register HTTP/1.1" 200 None
+2021-03-19 23:57:33,374 - INFO - root - configHttp.py - post_data - [line: 41] - {'data': None, 'errorCode': -1, 'errorMsg': '用户名已经被注册！'}
+2021-03-19 23:57:33,375 - INFO - root - testA.py - test_run - [line: 37] - 用例2执行状态：Fail
+2021-03-19 23:57:33,386 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:57:33,389 - DEBUG - root - configHttp.py - config_http - [line: 32] - 测试链接为https://www.wanandroid.com/user/logout/json
+2021-03-19 23:57:33,393 - DEBUG - urllib3.connectionpool - connectionpool.py - _new_conn - [line: 971] - Starting new HTTPS connection (1): www.wanandroid.com:443
+2021-03-19 23:57:33,762 - DEBUG - urllib3.connectionpool - connectionpool.py - _make_request - [line: 452] - https://www.wanandroid.com:443 "GET /user/logout/json?username=liangchao HTTP/1.1" 200 None
+2021-03-19 23:57:33,765 - INFO - root - configHttp.py - get_data - [line: 47] - {'data': None, 'errorCode': 0, 'errorMsg': ''}
+2021-03-19 23:57:33,766 - INFO - root - testA.py - test_run - [line: 37] - 用例3执行状态：Success
+2021-03-19 23:57:33,771 - INFO - root - writeExcel.py - write_excel - [line: 36] - 测试数据写入成功
+2021-03-19 23:57:33,773 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下from_addr的值为：zk1530@qq.com
+2021-03-19 23:57:33,773 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下send_to的值为：zk1530@163.com
+2021-03-19 23:57:33,773 - INFO - root - readConfig.py - get_value - [line: 30] - 获取email下passwd的值为：gdzwjzdycrfqhhed
+2021-03-19 23:57:35,466 - INFO - root - sendEmail.py - send_email - [line: 74] - 邮件发送成功

@@ -5,10 +5,12 @@
 str01 = 'welcome to super&Test'
 
 list01 = str01.split(' ')
+print(list01)
 list02 = []
 for i in list01:
     str02 = ''
     list03 = list(i)
+    print(list03)
     n = len(list03)
     j = 0
     while j < n//2 :

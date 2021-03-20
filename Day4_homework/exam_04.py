@@ -19,10 +19,14 @@ list02 = []
 dict01 = {}
 for i in content:
     i = i.strip('\n')   #去除每个元素中的\n
+    # print(i)
     list01 = i.split('，')       #使用‘，’分割每个元素为一个小列表
+    # print(list01)
     for j in list01:
         list02 = j.split(':')   #使用':'分割
+        # print(list02)
         dict01[list02[0]] = int(list02[1])      #将每个名字和年龄单独组成一个字典
+print(dict01)
 dict02 = {key:value for key,value in dict01.items() if value > 18}      #使用字典推导式生成大于18岁人员的字典
 for key in dict02.keys():
     print(f'大于18岁的有{key}')          #遍历key值进行打印
