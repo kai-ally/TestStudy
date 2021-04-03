@@ -1,0 +1,2 @@
+2021-04-01 00:04:01,065 - INFO - root - configLog.py - [line: 54] - 这是一个日志模块的测试数据
+2021-04-01 00:05:10,795 - INFO - root - configLog.py - [line: 54] - 这是一个日志模块的测试数据
